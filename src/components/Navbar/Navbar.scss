@@ -1,5 +1,40 @@
-#home{
+#home {
     position: fixed;
-    background-color: white;
     z-index: 5;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    z-index: 55;
+    h1 {
+        color: #fff;
+    }
+    nav {
+        ul {
+            li {
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.bg-white {
+    background-color: rgb(255, 255, 255) !important;
+    transition: all .3s ease-in-out;
+
+    h1 {
+        color: #000 !important;
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    color: #000 !important;
+                }
+            }
+        }
+    }
+
 }
