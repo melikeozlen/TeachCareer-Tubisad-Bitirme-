@@ -4,9 +4,11 @@
     background-color: transparent;
     transition: all .3s ease-in-out;
     z-index: 55;
+
     h1 {
         color: #fff;
     }
+
     nav {
         ul {
             li {
@@ -17,6 +19,7 @@
             }
         }
     }
+
 }
 
 .bg-white {
@@ -37,4 +40,33 @@
         }
     }
 
+
+}
+
+@media only screen and (max-width: 600px) {
+    #home {
+        height: 7rem !important;
+        border-bottom: 1px solid #ddd;
+        .logo {
+            display: flex;
+            justify-content: center;
+
+            h1 {
+                display: inline-block !important;
+                margin-right: auto !important;
+                margin-left: auto;
+            }
+        }
+
+        nav {
+            width: 100%;
+            gap:0rem !important;
+            padding: 0;
+            display: flex;
+            align-items: center !important;
+            ul{
+                margin-top: 1rem;
+            }
+        }
+    }
 }

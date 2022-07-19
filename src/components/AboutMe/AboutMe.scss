@@ -3,7 +3,7 @@ section {
 
     .parallax {
         /* The image used */
-        background-image: url("../../assets/image/laptop.jpg");
+        background-image: url("../../assets/image/keyboard.jpg");
 
         /* Set a specific height */
         min-height: 100vh;
@@ -22,16 +22,16 @@ section {
         z-index: 50;
         left: 10vw;
         right: 10vw;
-        top: 0;
+        top: 25vh;
         color: white;
         display: grid;
+        background-color: rgb(6, 6, 69);
         grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+        width: 80%;
         max-width: 50rem;
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        height: 100vh;
         margin: 0 auto;
 
         img {
