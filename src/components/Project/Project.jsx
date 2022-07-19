@@ -11,7 +11,7 @@ const Project = () => {
         getMyProject();
     }, [])
     return (
-        <div className='row w-100 d-flex p-4'>
+        <div id='project' className='row w-100 d-flex p-4'>
             {myProject.map((project, index) => {
                 return <div key={index} className="col-lg-3 col-md-6">
                     <ProjectCard data={project} />

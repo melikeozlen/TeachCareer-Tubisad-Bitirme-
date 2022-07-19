@@ -8,7 +8,7 @@ const ProjectCard = ({ data }) => {
                 <div className="card" style={{ marginLeft: "1rem", marginBottom: "2rem" }}>
                     <img src={data.img_url} alt="" />
                     <div className="card-body">
-                        <h5 className="card-title">{data.title[0]}</h5>
+                        <h5 className="card-title text-dark">{data.title[0]}</h5>
                         <div className='d-flex gap-1' style={{flexWrap:"wrap"}}>
                             {
                                 tags.map((tag) => {
@@ -17,8 +17,8 @@ const ProjectCard = ({ data }) => {
 
                             }
                         </div>
-                        <p className="card-text">{data.description[0]}</p>
-                        <a href={data.project_url} className="card-link">Github link</a>
+                        <p className="card-text text-dark">{data.description[0]}</p>
+                        <a href={data.project_url} className="card-link text-primary" >Github link</a>
                     </div>
                 </div>
                 :

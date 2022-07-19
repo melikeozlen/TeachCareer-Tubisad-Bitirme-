@@ -6,12 +6,14 @@ import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Project from './components/Project/Project'
 import Techonology from './components/Techonology/Techonology'
+import TodoList from './components/TodoList/TodoList'
 const App = () => {
   return (
     <>
       <Navbar />
       <Header />
       <Techonology />
+      <TodoList/>
       <AboutMe />
       <Project />
       <Counter />

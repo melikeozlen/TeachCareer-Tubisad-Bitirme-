@@ -5,23 +5,24 @@ const Login = ({ visiblity, setVisiblity }) => {
     const [password, setPassword] = useState();
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (Email === "melikeozlen@gmail.com" && password === "123456") {
+        if ((Email === "melikeozlen@gmail.com" || Email=="melikeozlen" )&& password === "123456") {
             alert("Login Successful")
+            setVisiblity(false)
         } else { alert("Login Failed") }
     }
 
     if (visiblity === true) {
         return (
             <div id='Login' className='Login mx-auto' >
+                
                 <div className="exid">
                     <button className='btn btn-danger' onClick={() => setVisiblity(false)}>X</button>
                 </div>
-
+                <h6 className='mx-auto'>LOGIN</h6>
                 <form action="">
-                    <input className='input' type="text" placeholder='Email Adress' value={Email} onChange={(e) => setEmail(e.target.value)} />
-                    <input type="text" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
-                    <button className='btn btn-primary' type='password' onClick={(e) => handleSubmit(e)} >LOGİN</button>
-                    <a href="#"> Or Create New Account...</a>
+                    <input className='input' type="text" placeholder='Email Adress or Username' value={Email} onChange={(e) => setEmail(e.target.value)} />
+                    <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+                    <button className='btn btn-primary' type='password' onClick={(e) => handleSubmit(e)} >LOGIN</button>
                 </form>
             </div>
         )

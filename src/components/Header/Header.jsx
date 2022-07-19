@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.scss'
 const Header = () => {
     return (
-        <header>
+        <header id='header'>
             <div className="title">
                 <h2>
                     HELLO, I'M MELİKE ...
