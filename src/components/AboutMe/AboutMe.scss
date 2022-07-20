@@ -25,7 +25,7 @@ section {
         top: 25vh;
         color: white;
         display: grid;
-        background-color: rgb(6, 6, 69);
+        background-color: #00c9db;
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
         max-width: 50rem;
@@ -47,4 +47,12 @@ section {
         }
     }
 
+}
+@media only screen and (max-width: 600px) {
+    .about-me {
+    
+        display: flex !important;
+        flex-direction: column !important;
+   
+    }
 }

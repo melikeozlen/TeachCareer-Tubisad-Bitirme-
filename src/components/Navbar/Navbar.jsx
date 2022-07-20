@@ -32,7 +32,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div id='home' className='home w-100 row d-flex justify-content-between mx-auto p-4 align-items-center ' style={{ height: "6rem" }}>
+            <div id='home' className='home w-100 row d-flex justify-content-between mx-auto p-4 align-items-center ' style={{ height: "7rem" }}>
                 <div className='col-md-2 logo'> <h1 className='fw-bold' style={{ fontSize: "1.2rem" }}> MY PORTFOLIO </h1></div>
                 <nav className='col-md-9 mx-1 d-flex justify-content-between align-items-center'>
                     <ul className='d-flex justify-content-between  align-items-center gap-2' style={{ width: "50%" }}>
@@ -41,6 +41,9 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a href="#about-me" >ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#todo">TODO</a>
                         </li>
                         <li>
                             <a href="#project" >PROJECT</a>

@@ -1,26 +1,30 @@
 .my-todo ul {
     margin: 0;
     padding: 0;
+    background-color: white;
   }
   .my-todo{
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 5rem auto;
+    max-width: 60rem;
   }
   /* Style the list items */
 .my-todo  ul li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    
     list-style-type: none;
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
+    display: flex !important;
+    justify-content: center;
     
-    /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    align-items: flex-start;
   }
   
   /* Set all odd list items to a different color (zebra-stripes) */
@@ -32,7 +36,10 @@
 .my-todo  ul li:hover {
     background: #ddd;
   }
-  
+  input[type="checkbox"]:checked~p {
+    text-decoration: line-through;
+    color: #00c9db !important;
+}
   /* When clicked on, add a background color and strike out text */
 .my-todo  ul li.checked {
     background: #888;
@@ -69,7 +76,7 @@
   
   /* Style the header */
 .my-todo  .header {
-    background-color: #508dff;
+    background-color: #00c9db;
     padding: 30px 40px;
     color: rgb(46, 46, 46);
     text-align: center;
@@ -110,3 +117,21 @@
 .my-todo  .addBtn:hover {
     background-color: #bbb;
   }
+
+  @media only screen and (max-width: 750px) {
+    .my-todo{
+      width: 100%;
+      margin: 15rem auto;
+      max-width: 60rem;
+    }
+  }
+  
+
+input[type=checkbox] {
+  accent-color: #00c9db !important;
+  transform: scale(1.5);
+}
+input[type=checkbox] ~p {
+  padding: 0.3rem;
+ font-size: 1rem;
+}

@@ -11,7 +11,7 @@ const TodoList = () => {
     var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
+  close[i].onClick = function() {
     var div = this.parentElement;
     div.style.display = "none";
   }
@@ -44,7 +44,7 @@ function newElement() {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
+    close[i].onClick = function() {
       var div = this.parentElement;
       div.style.display = "none";
     }
@@ -52,10 +52,10 @@ function newElement() {
 }
     return (
         <div className=' p-4 row my-todo'>
-            <div id="myDIV" class="header">
-                <h2 style={{margin:"5px"}} >Öğrenilecekler Listesi</h2>
+            <div id="myDIV" className="header">
+                <p  style={{margin:"5px", fontSize:"1.3rem"}} >Öğrenilecekler Listesi</p>
                 <input type="text" id="myInput" placeholder="Title..." />
-                <span onclick={()=>newElement()} className="addBtn">Add</span>
+                <span onClick={()=>newElement()} className="addBtn">Add</span>
             </div>
 
             <ul id="myUL" onClick={()=>ulClick()}>
@@ -63,7 +63,7 @@ function newElement() {
                 <li className="checked">CSS</li>
                 <li className='text-dark checked'>JavaScript</li>
                 <li className='text-dark checked'>ReactJS</li>
-                <li className='text-dark'>NodeJSk</li>
+                <li className='text-dark'>NodeJS</li>
                 <li className='text-dark'>ExpressJS</li>
             </ul>
         </div>
